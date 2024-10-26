@@ -1,5 +1,16 @@
-export function App() {
+import { BrowserRouter as Router} from 'react-router-dom';
+import { Footer } from "./base/Footer";
+import { Header } from "./base/Header";
+import { Main } from "./base/Main";
+
+export function App(){
   return (
-    <h1 className="text-white m-5 text-lg font-bold">Workshop React 2024</h1>
-  )
+    <Router>
+      <div className = "App">
+        <header><Header/></header>
+        <main><Main/></main>
+        <footer><Footer/></footer>
+      </div>
+    </Router>
+  );
 }
