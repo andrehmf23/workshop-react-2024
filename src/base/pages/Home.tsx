@@ -1,7 +1,7 @@
 
 export function Home(){
   return (
-    <div className="main-content">
+    <div className="base-div">
       <h1>Workshop React 2024</h1>
     </div>
     )

@@ -9,6 +9,7 @@ html, body {
 h1 {
   font-family: 'Roboto', sans-serif;
   font-size: larger;
+  font-size: 9mm;
   font-weight: bold;
   color: #ffffff;
   display: flex; /* Define o contêiner como flex */
@@ -23,14 +24,19 @@ p {
   font-weight: bold;
   color: #ffffffa8;
   display: flex; /* Define o contêiner como flex */
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
+  width: auto;
+  height: auto;
   flex: 1;
 }
 
+p:hover {
+  color: #ffb854;
+}
+
 .App {
-  background-image: url('./test/images/hex-background.jpg'); /* Caminho para a imagem */
-  background-size: 100%; /* Cobre todo o espaço do elemento */
+  background-image: url('./base/images/hex-background.jpg'), linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, white 100%); /* Caminho para a imagem */
+  background-blend-mode: overlay; /* Combina a imagem e o gradiente */
+  background-size: cover; /* Cobre toda a área */
   background-position: center; /* Centraliza a imagem */
   display: flex;
   flex-direction: column;
@@ -61,6 +67,13 @@ p {
   display: flex; /* Define o contêiner como flex */
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center; /* Centraliza verticalmente */
+  flex: 1;
+}
+
+.base-div {
+  font-family: 'Roboto', sans-serif;
+  align-content: center;
+  justify-items: center;
   flex: 1;
 }
 
