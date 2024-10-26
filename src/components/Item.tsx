@@ -7,7 +7,7 @@ export function Item(props: { text: string, completed: boolean, onClick: () => v
     return (
         <div
             onClick={props.onClick}
-            className="flex flex-row min-h-[50px] w-full items-center cursor-pointer hover:bg-slate-600 bg-slate-800 mb-1 rounded-lg p-3"
+            className="flex flex-row min-h-[50px] w-full items-center cursor-pointer hover:bg-[rgba(255,255,255,0.1)] bg-[rgba(0,0,0,0.2)] mb-1 rounded-lg p-3"
         >
             {props.completed ? (
                 <Checked className=" text-white text-3xl mr-3" />

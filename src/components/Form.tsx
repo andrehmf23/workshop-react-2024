@@ -23,10 +23,10 @@ export function Form(props: FormProps) {
                         value={state}
                     />
                     <button
-                        className="h-[50px] pl-4 pr-4 bg-slate-400 rounded-lg font-bold"
+                        className="h-[50px] pl-4 pr-4 bg-[rgba(255,255,255,0.7)] hover:bg-[rgba(255,255,255,0.8)] rounded-lg font-bold"
                         type="submit"
                     >
-                        <Plus className="text-slate-900 text-2xl" />
+                        <Plus className="text-[#1e293b] text-2xl" />
                     </button>
                 </div>
             </form>

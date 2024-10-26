@@ -9,7 +9,7 @@ type ItemProps = {
 
 function FilterItem(props: ItemProps) {
     return (
-        <button onClick={props.onClick} className="flex flex-row items-center flex-1 bg-slate-800 px-3 py-1 rounded-full hover:bg-slate-600">
+        <button onClick={props.onClick} className="flex flex-row items-center flex-1 hover:bg-[rgba(255,255,255,0.1)] bg-[rgba(0,0,0,0.2)] px-3 py-1 rounded-full">
             {props.checked ? <Checked className="mr-3 text-xl" /> : <Unchecked className="mr-3 text-xl" />}
             {props.label}
         </button>
