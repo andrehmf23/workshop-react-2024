@@ -1,0 +1,41 @@
+
+.grow-up {
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Transição suave */
+    max-height: max-content;
+    opacity: 0.5;
+}
+
+.grow-up:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.topics {
+    font-family: 'Roboto', sans-serif;
+    font-size: 6mm;
+    font-weight: bold;
+    color: gray;
+    margin: 20px;
+    width: auto; /* Pode ser ajustado conforme necessário */
+    height: auto; /* Pode ser ajustado conforme necessário */
+}
+
+.topics:hover {
+    color: #ffb854;
+}
+
+.flex-container {
+    display: flex; /* Define o contêiner como flex */
+    flex-direction: row;
+    justify-content: left;
+    flex: 1;
+}
+
+.flex-container-links {
+    gap: 100px;
+    display: flex; /* Define o contêiner como flex */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: row;
+    flex: 1;
+}

@@ -1,89 +1,27 @@
+
+@import url('./style/elements.css');
+@import url('./style/header.css');
+@import url('./style/main.css');
+@import url('./style/footer.css');
+
+
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
+
+:root {
+  --primary-color: white;
+  --secundary-color: gray;
+  --third-color: orange;
+  --four-color: yellow;
+}
 
 html, body {
   background: #ffffff
 }
 
-h1 {
-  font-family: 'Roboto', sans-serif;
-  font-size: larger;
-  font-size: 9mm;
-  font-weight: bold;
-  color: #ffffff;
-  display: flex; /* Define o contêiner como flex */
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  flex: 1;
-}
-
-p {
-  font-family: 'Roboto', sans-serif;
-  font-size: larger;
-  font-weight: bold;
-  color: #ffffffa8;
-  display: flex; /* Define o contêiner como flex */
-  width: auto;
-  height: auto;
-  flex: 1;
-}
-
-p:hover {
-  color: #ffb854;
-}
-
-.App {
-  background-image: url('./base/images/hex-background.jpg'), linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, white 100%); /* Caminho para a imagem */
-  background-blend-mode: overlay; /* Combina a imagem e o gradiente */
-  background-size: cover; /* Cobre toda a área */
-  background-position: center; /* Centraliza a imagem */
-  display: flex;
-  flex-direction: column;
-  height: 100vh; /* Altura máxima da tela */
-}
-
-.hex-icon {
-  transition: transform 0.5s ease, opacity 0.5s ease; /* Transição suave */
-  max-height: max-content;
-  opacity: 0.5;
-}
-
-.hex-icon:hover {
-  transform: scale(1.1);
-  opacity: 0.8;
-}
-
-.flex-container-icon {
-  display: flex;
-  flex-direction: row;
-}
-
-.flex-container-links {
-  font-family: 'Roboto', sans-serif;
-  font-size: larger;
-  font-weight: bold;
-  color: #ffffff;
-  display: flex; /* Define o contêiner como flex */
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  flex: 1;
-}
-
-.base-div {
-  font-family: 'Roboto', sans-serif;
-  align-content: center;
-  justify-items: center;
-  flex: 1;
-}
-
-.flex-link {
-  width: auto; /* Pode ser ajustado conforme necessário */
-  height: auto; /* Pode ser ajustado conforme necessário */
-  margin: 20px;
-}
-
 header {
+  display: flex;
   background-color: rgba(0, 0, 0, 0.8);
   flex: 1;
 }
@@ -100,15 +38,38 @@ footer {
   flex: 1;
 }
 
-.main-content {
+p {
   font-family: 'Roboto', sans-serif;
-  font-size: 35px;
+  font-size: 5mm;
+  color: var(--primary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  color: #ffffff;
-  display: flex; /* Define o contêiner como flex */
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  flex: 1;
+  color: var(--primary-color);
+}
+
+h1 {font-size: 15mm;}
+
+h2 {font-size: 13mm;}
+
+h3 {font-size: 11mm;}
+
+h4 {font-size: 9mm;}
+
+h5 {font-size: 7mm;}
+
+h6 {font-size: 5mm;}
+
+.App {
+  background-image: url('./base/images/hex-background.jpg'), linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, white 100%); /* Caminho para a imagem */
+  background-blend-mode: overlay; /* Combina a imagem e o gradiente */
+  background-size: cover; /* Cobre toda a área */
+  background-position: center; /* Centraliza a imagem */
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Altura máxima da tela */
 }
 
 /* For Webkit-based browsers (Chrome, Safari and Opera) */

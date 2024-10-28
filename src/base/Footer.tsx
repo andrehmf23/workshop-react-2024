@@ -3,7 +3,7 @@
 export function Footer(){
     return(
         <div className="base-div">
-            <p>Contatos: marchettofilho0404@gmail.com</p>
+            <p className="credits">Contatos: marchettofilho0404@gmail.com</p>
         </div>
     )
 }

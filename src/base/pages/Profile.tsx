@@ -4,7 +4,7 @@ export function Profile(){
   const { id } = useParams<{ id: string }>();
   return (
     <div className='base-div'>
-      <p>Perfil do usuário {id}</p>
+      <h1>Perfil do usuário {id}</h1>
     </div>
   );
 }

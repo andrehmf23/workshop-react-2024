@@ -3,21 +3,17 @@ import icon from './images/hex-icon.png'
 
 export function Header(){
     return (
-        <div>
-            <nav>
-                <div className='flex-container-icon'>
-                    <Link to="/" className='flex-link'>
-                        <img className='hex-icon' src={icon} alt="Descrição da imagem" width="50"/>
-                    </Link>
-                    <div className='flex-container-links'>
-                        <Link to="/about" className='flex-link'><p>Sobre</p></Link>
-                        <Link to="/profile/:id" className='flex-link'><p>Profile</p></Link>
-                        <Link to="/list" className='flex-link'><p>Lista</p></Link>
-                        <Link to="/login" className='flex-link'><p>Login</p></Link>
-                        <Link to="/register" className='flex-link'></Link>
-                    </div>
-                </div>
-            </nav>
-        </div>
+        <nav className='flex-container'>
+            <Link to="/" className='topics'>
+                <img className='grow-up' src={icon} alt="Descrição da imagem" width="50"/>
+            </Link>
+            <div className='flex-container-links'>
+                <Link to="/about" className='topics'>Sobre</Link>
+                <Link to="/profile/:id" className='topics'>Profile</Link>
+                <Link to="/list" className='topics'>Lista</Link>
+                <Link to="/login" className='topics'>Login</Link>
+                <Link to="/register" className='topics'></Link>
+            </div>
+        </nav>
     )
 }

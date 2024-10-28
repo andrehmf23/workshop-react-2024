@@ -1,0 +1,47 @@
+/* Animação de brilho */
+@keyframes brilho-1 {
+    0% {
+        color: gray;
+    }
+    50% {
+        color: rgb(160, 160, 160); /* Cor brilhante */
+    }
+    100% {
+        color: gray; /* Cor original */
+    }
+}
+
+/* Animação de brilho */
+@keyframes brilho-3 {
+    0% {
+        color: orange;
+    }
+    50% {
+        color: rgb(255, 194, 79); /* Cor brilhante */
+    }
+    100% {
+        color: orange; /* Cor original */
+    }
+}
+
+.title-home-1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 15mm;
+    animation: brilho-1 4s infinite; /* Adiciona a animação */
+}
+
+.title-home-2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 15mm;
+    color: white;
+}
+
+.title-home-3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 16mm;
+    margin-left: 200px;
+    animation: brilho-3 3s infinite; /* Adiciona a animação */
+}
