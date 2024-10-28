@@ -10,6 +10,7 @@ export function Form(props: FormProps) {
     return (
         <>
             <form onSubmit={(event) => {
+                console.log("Evento: ", event);
                 event.preventDefault();
                 if (state) {
                     props.onSubmit(state);
