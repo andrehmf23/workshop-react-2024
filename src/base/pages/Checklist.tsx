@@ -14,7 +14,7 @@ type Todo = {
 
 export function Checklist() {
   const [lista, setLista] = useLocalStorage<Todo[]>("tarefas", [])
-  const [filter, setFilter] = useLocalStorage<"all" | "completed" | "uncompleted">("filtro", "all")
+  const [filter, setFilter] = useLocalStorage<"all" | "completed" | "uncompleted"> ("filtro", "all")
 
   const addTask = (task: string) => {
     setLista([
